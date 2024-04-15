@@ -1,0 +1,17 @@
+﻿{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "DockerVolumeBackup.Worker": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "environmentVariables": {
+        "DVB_BACKUP_PATHS": "C:\\Backup\\Data",
+        "DVB_DISCORD_DVBBOT_WEBHOOK_URL": "https://discord.com/api/webhooks/1234567890987654321/abcdefgijklmnopqrstuvwxyz_1234567890",
+        "DVB_RETENTION_POLICY_ENABLED": "true",
+        "DVB_RETENTION_POLICY_LENGTH": "7.00:00:00", // 7 days
+        "DVB_RETENTION_POLICY_MINIMUM_VOLUME_COUNT": "24",
+        "DVB_WORKER_INTERVAL_IN_MS": "3600000" // 1 hour
+      }
+    }
+  }
+}
